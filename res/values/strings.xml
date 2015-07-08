@@ -4,9 +4,16 @@
     <string name="app_name">SpreadAPP</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <!-- login_activity -->
     <string name="login_et_account_hint">用户名</string>
     <string name="login_et_password_hint">密码</string>
     <string name="login_btn_regist">注  册</string>
     <string name="login_btn_login">登  入</string>
+    <!-- regist_activity -->
+    <string name="regist">注册</string>
+    <string name="regist_et_account_hint">用户名</string>
+    <string name="regist_et_password_hint">密码</string>
+    <string name="regist_et_password_hint_again">确认密码</string>
+    <string name="regist_btn_regist">确认注册</string>
 
 </resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F74275" >
+
+        <TextView
+            android:id="@+id/regist_tv_tittle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/regist"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/regist_ib_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="#F74275"
+            android:src="@drawable/btn_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_regist" >
+
+        <ImageView
+            android:id="@+id/login_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/login_icon" />
+
+        <LinearLayout
+            android:id="@+id/regist_ll_info"
+            style="@style/login_tv_et_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/regist_iv_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/login_account_icon" />
+
+                <EditText
+                    android:id="@+id/regist_et_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/regist_iv_account"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                    android:ems="8"
+                    android:hint="@string/regist_et_account_hint"
+                    android:maxLength="7"
+                    android:singleLine="true" >
+                </EditText>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/regist_iv_account"
+                    android:layout_marginTop="10dp"
+                    android:background="#33000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/regist_iv_password"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9dp"
+                    android:src="@drawable/login_password_icon" />
+
+                <EditText
+                    android:id="@+id/regist_et_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/regist_iv_password"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                    android:ems="6"
+                    android:hint="@string/regist_et_password_hint"
+                    android:maxLength="7"
+                    android:password="true"
+                    android:singleLine="true" >
+                </EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/regist_iv_password"
+                    android:layout_marginTop="10dp"
+                    android:background="#33000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/regist_iv_password_again"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9dp"
+                    android:src="@drawable/login_password_icon" />
+
+                <EditText
+                    android:id="@+id/regist_et_password_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/regist_iv_password_again"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                    android:ems="6"
+                    android:hint="@string/regist_et_password_hint_again"
+                    android:maxLength="7"
+                    android:password="true"
+                    android:singleLine="true" >
+                </EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/regist_iv_password_again"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/regist_btn_regist"
+            style="@style/add_btn_shape"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/regist_ll_info"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/regist_ll_info"
+            android:layout_marginBottom="15dp"
+            android:text="@string/regist_btn_regist"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>
