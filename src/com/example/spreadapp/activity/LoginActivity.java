@@ -1,6 +1,5 @@
 package com.example.spreadapp.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -18,21 +17,20 @@ import com.android.util.MD5Util;
 import com.example.spreadapp.R;
 import com.example.spreadapp.bean.UserBean;
 import com.example.spreadapp.util.SysApplication;
+import com.example.spreadapp.webservice.LoginWebservice;
 
-public class LoginActivity extends Activity {
+public class LoginActivity extends BaseActivity {
 	private DisplayMetrics displayMetrics;
 	private int window_width;
 	private int window_height;
 	private LayoutParams para;
 	private RelativeLayout login_rl_account;
 	private RelativeLayout login_rl_password;
-	@SuppressWarnings("unused")
 	private ImageView icon;
 	private Button btn_regist;
 	private Button btn_login;
 	private EditText login_et_account;
 	private EditText login_et_password;
-	@SuppressWarnings("unused")
 	private Boolean loginResult = false;
 	private long exitTime = 0;
 

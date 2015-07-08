@@ -1,7 +1,6 @@
 package com.example.spreadapp.activity;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -21,7 +20,7 @@ import com.example.spreadapp.bean.UserBean;
 /**
  * зЂВс
  * */
-public class RegistActivity extends Activity {
+public class RegistActivity extends BaseActivity {
 	private DisplayMetrics displayMetrics;
 	private int window_width, window_height;
 	private RelativeLayout tittle;

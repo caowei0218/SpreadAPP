@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.spreadapp.activity.LoginActivity;
 import com.example.spreadapp.bean.UserBean;
+import com.example.spreadapp.util.Common;
 import com.example.spreadapp.util.JsonBinder;
 
 public class LoginWebservice extends AsyncTask<String, Integer, String> {
@@ -89,7 +90,7 @@ public class LoginWebservice extends AsyncTask<String, Integer, String> {
 		if ("µÇÂ½³É¹¦".equals(result)) {
 			saveLoginUserName(userBean.getAccount(), userBean.getPassword(),
 					userBean.getUser_id());
-			Intent intent = new Intent(context, ShowActivity.class);
+			Intent intent = new Intent(context, LoginActivity.class);
 			context.startActivity(intent);
 			loginActivity.finish();
 		}
