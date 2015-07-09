@@ -36,8 +36,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/login_iv_account"
-                android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
                 android:background="@null"
+                android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
                 android:ems="10"
                 android:hint="@string/login_et_account_hint"
                 android:maxLength="7"
@@ -70,8 +70,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/login_iv_password"
-                android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
                 android:background="@null"
+                android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
                 android:ems="10"
                 android:hint="@string/login_et_password_hint"
                 android:maxLength="7"
@@ -96,6 +96,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="12dp"
                 android:text="@string/login_btn_regist"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
 
             <Button
@@ -106,6 +107,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/login_btn_regist"
                 android:text="@string/login_btn_login"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
         </RelativeLayout>
     </LinearLayout>
