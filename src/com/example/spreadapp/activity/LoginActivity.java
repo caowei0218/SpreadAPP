@@ -1,6 +1,7 @@
 package com.example.spreadapp.activity;
 
 import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.KeyEvent;
@@ -17,6 +18,7 @@ import com.android.util.MD5Util;
 import com.example.spreadapp.R;
 import com.example.spreadapp.bean.UserBean;
 import com.example.spreadapp.util.SysApplication;
+import com.example.spreadapp.util.BitmapUtil;
 import com.example.spreadapp.webservice.LoginWebservice;
 
 public class LoginActivity extends BaseActivity {
@@ -26,7 +28,7 @@ public class LoginActivity extends BaseActivity {
 	private LayoutParams para;
 	private RelativeLayout login_rl_account;
 	private RelativeLayout login_rl_password;
-	private ImageView icon;
+	private ImageView login_iv;
 	private Button btn_regist;
 	private Button btn_login;
 	private EditText login_et_account;
@@ -68,6 +70,11 @@ public class LoginActivity extends BaseActivity {
 		para.height = (int) (window_height * (92.0 / 1334));
 		para.width = (int) (window_width * (276.0 / 750));
 		btn_login.setLayoutParams(para);
+
+		login_iv.setBackgroundDrawable(new BitmapDrawable(BitmapUtil
+				.toRoundBitmap(this, "tup.png")));
+		login_iv.getBackground().setAlpha(0);
+		login_iv.setImageBitmap(BitmapUtil.toRoundBitmap(this, "tup.png"));
 
 	}
 
@@ -112,12 +119,12 @@ public class LoginActivity extends BaseActivity {
 	private void initView() {
 		btn_regist = (Button) findViewById(R.id.login_btn_regist);
 		btn_login = (Button) findViewById(R.id.login_btn_login);
-		icon = (ImageView) findViewById(R.id.login_iv);
+		login_iv = (ImageView) findViewById(R.id.login_iv);
 		login_rl_account = (RelativeLayout) findViewById(R.id.login_rl_account);
 		login_rl_password = (RelativeLayout) findViewById(R.id.login_rl_password);
 		login_et_account = (EditText) findViewById(R.id.login_et_account);
 		login_et_password = (EditText) findViewById(R.id.login_et_password);
-		
+
 	}
 
 	/**
