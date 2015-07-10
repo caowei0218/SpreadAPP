@@ -105,7 +105,7 @@ public class SplashActivity extends BaseActivity {
 		String cellphone = sp.getString("cellphone", "");
 		String nickName = sp.getString("nickName", "");
 		String gender = sp.getString("gender", "");
-		String age_group = sp.getString("age_group", "");
+		String age = sp.getString("age_group", "");
 		if ("".equals(account)) {
 			Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
 			startActivity(intent);
@@ -119,7 +119,7 @@ public class SplashActivity extends BaseActivity {
 			userBean.setCellphone(cellphone);
 			userBean.setNickname(nickName);
 			userBean.setGender(gender);
-			userBean.setAge_group(age_group);
+			userBean.setAge(age);
 			Common.userCommon = userBean;
 			// µÇÂ½Òì²½´¦Àí
 			// LoginAgainWebservice loginWebservice = new LoginAgainWebservice(

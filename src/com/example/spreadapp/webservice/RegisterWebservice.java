@@ -109,7 +109,7 @@ public class RegisterWebservice extends AsyncTask<String, Integer, String> {
 		editor.putString("cellphone", user.getCellphone());
 		editor.putString("nickName", user.getNickname());
 		editor.putString("gender", user.getGender());
-		editor.putString("age_group", user.getAge_group());
+		editor.putString("age_group", user.getAge());
 		editor.commit();
 	}
 }

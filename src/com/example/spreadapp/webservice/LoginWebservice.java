@@ -110,7 +110,7 @@ public class LoginWebservice extends AsyncTask<String, Integer, String> {
 		editor.putString("cellphone", userBean.getCellphone());
 		editor.putString("nickName", userBean.getNickname());
 		editor.putString("gender", userBean.getGender());
-		editor.putString("age_group", userBean.getAge_group());
+		editor.putString("age_group", userBean.getAge());
 		editor.commit();
 	}
 }
